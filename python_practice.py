@@ -59,6 +59,27 @@ print(standard_deviation)
 # Problem 4: Don't repeat yourself by writing functions
 # Write a function that takes an integer N as input and returns the sum of the first N numbers in the fibonacci sequence.
 # Then use this function to calculate the sums for N = 5, 10, 15, 20, 25, and 30 and print them as a list.
+N = [5, 10, 15, 20, 25, 30] #numbers to find sums for
+Outputs = [] #empty list that will return output
+
+
+for numbers in N: #iterates over list N
+    total = 0 #these values reset each time a new number in the list is used
+    count = 0
+    a = 0
+    b = 1
+    while count < numbers: #this section is the same as above with different variable names
+        total = total + a 
+        new_number = a + b
+        a = b
+        b = new_number
+        count = count + 1
+    Outputs+=[total]   #this adds the total for each value to the output list #typeerror, can not add int to list
+
+print(Outputs) #returns output list with all sums
+
+
+
 
 # %% ###########################################################
 # Problem 5: Read your error messages
