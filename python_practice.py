@@ -1,8 +1,9 @@
 # This is your first coding assignment for Computational BME.
 # As discussed in class, feel free to use AI tools to help you complete this assignment, but remember to cite them.
 # I encourage you to try the problems yourself first and only use AI tools when you are stuck to benefit your learning. 
-
 # %% ###########################################################
+
+#Reilly Hiner (mew2ze)
 # Problem 1: Practice writing pseudocode
 
 # Write pseudocode that will input a integer N and output the sum of the first N numbers in the fibonacci sequence.
@@ -10,7 +11,23 @@
 # Example: If N = 5, the output should be 0 + 1 + 1 + 2 + 3 = 7
 
 """ # you can use three double-quotes to write multi-line comments
-XXX Write your pseudocode here XXX
+Start
+sum = 0                                 #starting value of the fibonacci sequence is 0
+first = 0
+second = 1
+
+N = input("Enter an integer:")          #this will get the user to enter a number to be used in future code
+for i 1 to N
+    sum = sum + first                   #adds existing value of sum to first number in sequence
+    sum = sum + second
+    sum = sum +....
+    sum = sum + N                      #continues for N
+print(sum)                             #returns value of sum (N sequence in fibonacci)
+
+N = int(input("Enter an integer between 1 and 20:"))
+fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
+print(fibonacci[N-1])
+
 """
 
 # %% ###########################################################
