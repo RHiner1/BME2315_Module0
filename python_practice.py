@@ -24,37 +24,37 @@ for i 1 to N
     sum = sum + N                      #continues for N
 print(sum)                             #returns value of sum (N sequence in fibonacci)
 
-N = int(input("Enter an integer between 1 and 20:"))
-fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
-print(fibonacci[N-1])
 
 """
 
 # %% ###########################################################
 # Problem 2: Comment your code
 # Comments are very helpful for others (especially when pair-coding!) and yourself to understand your code! Add comments to the following code, which will run but produces the wrong output. Once you comment the code, you should be able to identify the error and fix it (the correct total that should be printed is 12).
-N = 6
+N = 6 # the place in the sequence that we want the code to run to
 
 a = 0 # set a to the first fibonacci number
 b = 1 # set b to the second fibonacci number
-count = 0
-total = 0
+count = 0 # runs through numbers 0 to N
+total = 0 #sums values over N to return fibonacci sum at N
 
-while count < N:
-    total = total + b
+while count < N: #runs while the value of count is less than N
+    total = total + a #adds value of a to existing total
 
-    next_value = a + b
-    a = b
-    b = next_value
+    next_value = a + b #creates new variable which produces the next number in the sequence
+    a = b #sets first number to the second number of the previous loop
+    b = next_value #sets b to the new value created by adding previous 2 numbers
 
-    count = count + 1
+    count = count + 1 #increases count by 1
 
-print(total)
+print(total) #returns value of fibonacci numbers summed over N
 
 # %% ###########################################################
 # Problem 3: Using common Python libraries
 # What is the standard deviation of the first 10 numbers in the fibonacci sequence? Use the numpy library to calculate the standard deviation.
-
+import numpy as np
+fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+standard_deviation = np.std(fibonacci)
+print(standard_deviation)
 # %% ###########################################################
 # Problem 4: Don't repeat yourself by writing functions
 # Write a function that takes an integer N as input and returns the sum of the first N numbers in the fibonacci sequence.
