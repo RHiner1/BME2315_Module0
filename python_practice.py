@@ -98,14 +98,15 @@ def find_fib_above_limit(limit):
     :return: index of the first number above limit
     :rtype: integer
     """
-    a = "0"
-    b = "1"
+    a = 0
+    b = 1
+    index = 0
 
-    while a <= limit:
+    while a <= limit: #typeerror, can not do operation between a string and integer
         next_value = a + b
         a = b
         b = next_value
-        index += 1
+        index += 1 #unbound local error, index is not a local variable that has been defined
 
     return index
 
