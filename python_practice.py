@@ -122,12 +122,12 @@ def sum_even_fib(limit):
     a, b = 0, 1
     total = 0
     while b <= limit:
-        if b % 2 == 0:  # This line checks if the Fibonacci number is even
-            total = b
+        if b % 2 == 1:  # This line checks if the Fibonacci number is even, it should be odd so I edited it
+            total += b #it should add b to the existing total, not override it completely
         a, b = b, a + b
     return total
 
 
-# Add your test cases here
+#Test cases: 0, 2, 3, 20, 50
 
 # %%
